@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erik Cerrada Plumed — Tieto- ja viestintätekniikan kaksoistutkintolainen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ledger">
+
+  <!-- ============ COVER ============ -->
+  <header class="cover">
+    <div class="cover__id">
+      <p class="cover__file">Tiedosto · No. 0192</p>
+      <h1 class="cover__name">Erik&nbsp;Cerrada Plumed</h1>
+      <p class="cover__role">Tieto- ja viestintätekniikan kaksoistutkintolainen | Taitajat 2026 Web-kehityksen hopeamitalisti</p>
+    </div>
+
+    <p class="cover__bio">
+      Olen Erik Cerrada Plumed, 18-vuotias opiskelija Kuopiosta, joka on kiinnostunut robotiikasta ja tekoälystä. Tavoitteeni on päästä jatko-opintoihin robotiikan alalle ja kehittää taitojani ohjelmoinnissa ja teknologian soveltamisessa.
+    </p>
+
+    <div class="cover__meta">
+      <dl class="factline">
+        <div class="factline__row"><dt>Sijainti</dt><dd>Kuopio, Finland</dd></div>
+        <div class="factline__row"><dt>Opintojen alku</dt><dd>2024</dd></div>
+        <div class="factline__row"><dt>Tavoite</dt><dd>Päästä robotiikka jatko-opintoihin</dd></div>
+      </dl>
+
+      <label class="avail">
+        <input
+          type="checkbox"
+          id="avail-toggle"
+          class="avail__input"
+          checked
+          disabled
+        >
+        <span class="avail__box" aria-hidden="true"></span>
+        <span class="avail__text">
+          <span class="avail__on">Haen TEO-jakso paikkaa</span>
+        </span>
+        <span class="stamp" aria-hidden="true">Saatavilla</span>
+      </label>
+    </div>
+  </header>
+
+  <!-- ============ NAV + PAGES ============ -->
+  <div class="body">
+
+    <nav class="index-tabs" aria-label="CV sections">
+      <label class="tab tab--profile">
+        <input type="radio" name="section" id="tab-profile" checked>
+        <span>Minusta</span>
+      </label>
+      <label class="tab tab--experience">
+        <input type="radio" name="section" id="tab-experience">
+        <span>Kokemukset</span>
+      </label>
+      <label class="tab tab--skills">
+        <input type="radio" name="section" id="tab-skills">
+        <span>Taidot</span>
+      </label>
+      <label class="tab tab--work">
+        <input type="radio" name="section" id="tab-work">
+        <span>Työt</span>
+      </label>
+      <label class="tab tab--contact">
+        <input type="radio" name="section" id="tab-contact">
+        <span>Yhteystiedot</span>
+      </label>
+    </nav>
+
+    <main class="pages">
+
+      <!-- ===== Minusta ===== -->
+      <section class="page page--profile" id="page-profile" aria-label="Profile">
+        <h2 class="page__title">Minusta</h2>
+
+        <p class="page__lede">
+          Lyhyt esittely itsestäni ja taustastani.
+        </p>
+
+        <p>
+          Kiinnostukseni tieto- ja viestintätekniikkaan syttyi jo alakoulussa Scratch-pelien koodauksen parissa. Yläkoulun valinnaiskurssien myötä hakeuduin suorittamaan TVT-alan kaksoistutkintoa, jossa yhdistän käytännön ammattitaidon ja lukio-opinnot.
+        </p>
+        <p>
+            Kehitän jatkuvasti taitojani ohjelmoinnissa ja web-kehityksessä. Yksi merkittävimmistä saavutuksistani on Taitajat 2026 -kilpailun SM-hopea Web-kehitys -lajissa.
+        </p>
+        <p>
+            Opiskelussa erityinen vahvuuteni on pitkä matematiikka, jossa olen menestynyt erinomaisesti. Vahva matemaattinen ja looginen pohja antaa minulle hyvät valmiudet vaativiin jatko-opintoihin ja teknologian soveltamiseen.
+        </p>
+        <dl class="ledger-facts">
+          <div class="ledger-facts__header">
+            <dt>Kieli</dt>
+            <dt>Sujuvuus</dt>
+          </div>
+          <div class="ledger-facts__row">
+            <dt>Suomi</dt><dd>Äidinkieli</dd>
+          </div>
+          <div class="ledger-facts__row">
+            <dt>Englanti</dt><dd>Sujuva</dd>
+          </div>
+          <div class="ledger-facts__row">
+            <dt>Espanja</dt><dd>Äidinkieli</dd>
+          </div>
+          <div class="ledger-facts__row">
+            <dt>Katalaani</dt><dd>Äidinkieli</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- ===== EXPERIENCE ===== -->
+      <section class="page page--experience" id="page-experience" aria-label="Experience">
+        <h2 class="page__title">Kokemukset</h2>
+        <p class="page__lede">Avaa merkintä ja lue, mistä siinä oikeastaan ​​oli kyse.</p>
+
+        <div class="entries">
+
+          <details class="entry" open>
+            <summary class="entry__summary">
+              <span class="entry__org">Taitajat 2026 finaali</span>
+              <span class="entry__role">Hopeamitali</span>
+              <span class="entry__date">2026 toukokuu</span>
+            </summary>
+            <div class="entry__body">
+              <ul>
+                <li>Pääsin finaaliin melkein huonoimmilla pisteillä, mutta harjoittelin paljon itekseen ennen finaalia ja lopulta sain hopeaa.</li>
+                <li>Aamusin minulla oli lukiota ja iltasin tulin opettelemaan itekseen uusia koodi kieliä ammattikoulun puolelle.</li>
+                <li>
+                  <button type="button" class="certificate-button" id="open-certificate">
+                    Katso todistus
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="entry">
+            <summary class="entry__summary">
+              <span class="entry__org">Pepe Utriainen</span>
+              <span class="entry__role">Ruokakassi arvonta järjestelmä</span>
+              <span class="entry__date">2026 toukokuu</span>
+            </summary>
+            <div class="entry__body">
+              <ul>
+                <li>Pitkän matematiikan iltalukion ja Taitaja-kilpailuihin valmistautumisen ohessa suoritin TEO-jakson, jonka aikana kehitin ruokakassien arvontajärjestelmän.</li>
+                <li>Käyttäjä pystyi valitsemaan haluamansa ruoka-apukohteen ja arpomaan järjestelmän avulla itselleen ruokakassin.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="entry">
+            <summary class="entry__summary">
+              <span class="entry__org">TCD Consulting and Research</span>
+              <span class="entry__role">Resilienssikompassi</span>
+              <span class="entry__date">2026 helmikuu</span>
+            </summary>
+            <div class="entry__body">
+              <ul>
+                <li>Rakensin resilienssiä arvioivan sovelluksen, joka muuttaa kyselyn arvot visuaalisiksi tuloksiksi interaktiivisen kompassin avulla.</li>
+                <li>Toteutin käyttäjätunnukset ja vastaushistorian, joiden avulla käyttäjät voivat tallentaa ja tarkastella aiempia arviointejaan.</li>
+                <li>Suunnittelin kaksitasoisen roolipohjaisen käyttöoikeusjärjestelmän Super Admin- ja yritysadmin-rooleilla.</li>
+                <li>Toteutin yrityskohtaisen tiedoneristyksen, jotta adminit voivat käsitellä vain oman organisaationsa tietoja.</li>
+                <li>Rakensin ylläpitotoiminnot käyttäjien, yritysten, käyttöoikeuksien ja järjestelmään tallennetun datan hallintaan.</li>              </ul>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <!-- ===== SKILLS ===== -->
+        <section class="page page--skills" id="page-skills" aria-label="Taidot">
+        <h2 class="page__title">Taidot</h2>
+        <p class="page__lede">Yhteenveto teknologioista ja taidoista, joita käytän ja kehitän aktiivisesti.</p>
+
+        <div class="skillgroups">
+
+            <div class="skillgroup">
+            <h3 class="skillgroup__title">Ohjelmointi</h3>
+            <ul class="skilllist">
+                <li><span class="skill__name">JavaScript</span><span class="tally tally-5" aria-hidden="true"></span><span class="sr-only">5 / 5</span></li>
+                <li><span class="skill__name">HTML &amp; CSS</span><span class="tally tally-5" aria-hidden="true"></span><span class="sr-only">5 / 5</span></li>
+                <li><span class="skill__name">Vue.js</span><span class="tally tally-5" aria-hidden="true"></span><span class="sr-only">5 / 5</span></li>
+                <li><span class="skill__name">PHP</span><span class="tally tally-4" aria-hidden="true"></span><span class="sr-only">4 / 5</span></li>
+                <li><span class="skill__name">C#</span><span class="tally tally-2" aria-hidden="true"></span><span class="sr-only">2 / 5</span></li>
+            </ul>
+            </div>
+
+            <div class="skillgroup">
+            <h3 class="skillgroup__title">Backend &amp; data</h3>
+            <ul class="skilllist">
+                <li><span class="skill__name">Node.js / Express</span><span class="tally tally-5" aria-hidden="true"></span><span class="sr-only">5 / 5</span></li>
+                <li><span class="skill__name">SQL</span><span class="tally tally-5" aria-hidden="true"></span><span class="sr-only">5 / 5</span></li>
+                <li><span class="skill__name">MySQL</span><span class="tally tally-5" aria-hidden="true"></span><span class="sr-only">5 / 5</span></li>
+                <li><span class="skill__name">REST API:t</span><span class="tally tally-4" aria-hidden="true"></span><span class="sr-only">4 / 5</span></li>
+                <li><span class="skill__name">Tietokantojen suunnittelu</span><span class="tally tally-4" aria-hidden="true"></span><span class="sr-only">4 / 5</span></li>
+            </ul>
+            </div>
+
+            <div class="skillgroup">
+            <h3 class="skillgroup__title">Työkalut &amp; kehitys</h3>
+            <ul class="skilllist">
+                <li><span class="skill__name">Git &amp; GitHub</span><span class="tally tally-4" aria-hidden="true"></span><span class="sr-only">4 / 5</span></li>
+                <li><span class="skill__name">Visual Studio Code</span><span class="tally tally-5" aria-hidden="true"></span><span class="sr-only">5 / 5</span></li>
+                <li><span class="skill__name">Responsiivinen web-suunnittelu</span><span class="tally tally-4" aria-hidden="true"></span><span class="sr-only">4 / 5</span></li>
+                <li><span class="skill__name">Verkot &amp; tietoturvan perusteet</span><span class="tally tally-3" aria-hidden="true"></span><span class="sr-only">3 / 5</span></li>
+            </ul>
+            </div>
+
+        </div>
+        </section>
+
+      <!-- ===== WORK ===== -->
+      <section class="page page--work" id="page-work" aria-label="Selected work">
+        <h2 class="page__title">Työt</h2>
+        <p class="page__lede">Suodata tyypin mukaan, tai jätä kaikki näkyviin.</p>
+
+        <div class="filters" role="radiogroup" aria-label="Filter work by category">
+          <label class="filter"><input type="radio" name="filter" id="filter-all" checked><span>Kaikki</span></label>
+          <label class="filter"><input type="radio" name="filter" id="filter-webapp"><span>TEO-jaksot</span></label>
+          <label class="filter"><input type="radio" name="filter" id="filter-system"><span>Koulutehtävät</span></label>
+          <label class="filter"><input type="radio" name="filter" id="filter-experiment"><span>Omat projektit</span></label>
+        </div>
+
+        <ul class="work-grid">
+
+          <li class="project project--no-demo" data-cat="system">
+            <p class="project__tag">Koulu tehtävät</p>
+            <h3 class="project__title">Työssäoppimisen hallintajärjestelmä</h3>
+            <p class="project__desc">Sivusto hallitsee opiskelijoiden TEO-jaksoja, näyttöjä ja päiväkirjamerkintöjä sekä mahdollistaa niiden seurannan eri käyttäjärooleille. Adminit, opettajat, opiskelijat ja työpaikkaohjaajat voivat hallita ja tarkastella omiin tehtäviinsä liittyviä tietoja käyttöoikeuksien mukaisesti.</p>
+            <div class="project__actions">
+              <button type="button" class="project__instructions" data-instructions="Tällä hetkellä ei ole käyttöohjeita.">Käyttöohjeet</button>
+              <p class="project__no-demo">Anteeksi, tällä hetkellä ei ole demoa.</p>
+            </div>
+          </li>
+
+          <li class="project" data-cat="webapp">
+            <p class="project__tag">TEO-jaksoprojekti (Keskeneräinen)</p>
+            <h3 class="project__title">Resilienssikompassi</h3>
+            <p class="project__desc">Sovelluksessa käyttäjä antaa ulkopuolisen kyselyn arvot ja saa vastauksistaan visuaalisen kompassituloksen. Käyttäjä voi kirjautuneena tallentaa tulokset historiaan. Järjestelmässä on Super Admin- ja yritysadmin-roolit, joiden avulla käyttäjiä, yrityksiä ja tuloksia voidaan hallita eri käyttöoikeuksilla.</p>
+            <div class="project__actions">
+              <button type="button" class="project__instructions" data-instructions="Demossa on vain käyttäjän näkymä.<br><b>Käyttäjänimi:</b> Test<br><b>Salasana:</b> 123">Käyttöohjeet</button>
+              <a class="project__link" href="https://tvt-linux.tvtedu.fi/~213601/kompassi-project-main/kompassi-project-main/Kompassi/koodi/html/index.html" target="_blank" rel="noopener noreferrer">Näytä projekti</a>
+            </div>
+          </li>
+
+          <li class="project project--no-demo" data-cat="webapp">
+            <p class="project__tag">TEO-jaksoprojekti</p>
+            <h3 class="project__title">Ruokakassi arvonta</h3>
+            <p class="project__desc">Käyttäjä pystyi valitsemaan haluamansa ruoka-apukohteen ja arpomaan järjestelmän avulla itselleen ruokakassin. Admin pystyy hallitsemaan ruoka-apu kohteita.</p>
+            <div class="project__actions">
+              <button type="button" class="project__instructions" data-instructions="Tällä hetkellä ei ole käyttöohjeita.">Käyttöohjeet</button>
+              <p class="project__no-demo">Anteeksi, tällä hetkellä ei ole demoa.</p>
+            </div>
+          </li>
+
+          <li class="project" data-cat="experiment">
+            <p class="project__tag">Oma projekti</p>
+            <h3 class="project__title">Verkkokauppa</h3>
+            <p class="project__desc">Verkkokauppa, jossa on käyttäjälle, pakkaajalle, kuljettajalle ja adminille näkymät ja toiminnot.</p>
+            <div class="project__actions">
+              <button type="button" class="project__instructions" data-instructions="Avaa verkkokauppa ja tutustu käyttäjän näkymään ja toimintoihin. Käyttäjä tekee ostoksia, pakkaaja käsittelee tilauksia, kuljettaja hoitaa toimituksia ja admin hallitsee järjestelmää. HUOM! Demossa on vain käyttäjän näkymä.">Käyttöohjeet</button>
+              <a class="project__link" href="https://tvt-linux.tvtedu.fi/~213601/Verkkokauppa/Verkkokauppa/verkkokauppa.php" target="_blank" rel="noopener noreferrer">Näytä projekti</a>
+            </div>
+          </li>
+
+          <li class="project" data-cat="experiment">
+            <p class="project__tag">Oma projekti</p>
+            <h3 class="project__title">Vanha portfolio</h3>
+            <p class="project__desc">Vanha portfolio-sivuston versio.</p>
+            <div class="project__actions">
+              <button type="button" class="project__instructions" data-instructions="Avaa projekti ja selaa portfolion eri osioita tutustuaksesi sivuston rakenteeseen ja aiempaan toteutustapaan.">Käyttöohjeet</button>
+              <a class="project__link" href="https://erik124355.github.io/" target="_blank" rel="noopener noreferrer">Näytä projekti</a>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="page page--contact" id="page-contact" aria-label="Contact">
+        <h2 class="page__title">Yhteystiedot</h2>
+        <p class="page__lede">Nopein tapa tavoittaa minut on sähköpostitse.</p>
+
+        <div class="contact-row">
+          <span class="contact-row__label">Email</span>
+          <span class="contact-row__value" id="email-text">erik.cerradaplumed@gmail.com</span>
+          <button type="button" class="contact-row__action" id="copy-email">Kopioi</button>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-row__label">Muualla</span>
+          <span class="contact-row__value">
+            <a href="https://github.com/erik124355" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </span>
+        </div>      
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="colophon">
+    <p>Viimeksi päivitetty syyskuussa 2026</p>
+  </footer>
+
+</div>
+
+<!-- ============ INSTRUCTIONS MODAL ============ -->
+<div class="instructions-modal" id="instructions-modal" hidden>
+  <div class="instructions-modal__backdrop" data-close-instructions></div>
+
+  <div
+    class="instructions-modal__dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="instructions-modal-title"
+  >
+    <button
+      type="button"
+      class="instructions-modal__close"
+      data-close-instructions
+      aria-label="Sulje"
+    >
+      ×
+    </button>
+
+    <p class="instructions-modal__label">KÄYTTÖOHJEET</p>
+
+    <h2 id="instructions-modal-title">Projektin käyttö</h2>
+
+    <p id="instructions-modal-text"></p>
+  </div>
+</div>
+
+<!-- ============ CERTIFICATE MODAL ============ -->
+<div class="certificate-modal" id="certificate-modal" hidden>
+  <div class="certificate-modal__backdrop" data-close-certificate></div>
+
+  <div class="certificate-modal__dialog" role="dialog" aria-modal="true" aria-label="Todistus">
+    <button type="button" class="certificate-modal__close" data-close-certificate aria-label="Sulje">×</button>
+    <img src="images/todistus.jpeg" alt="Todistus" class="certificate-modal__image">
+  </div>
+</div>
+
+<script>
+
+  (function () {
+    var modal = document.getElementById('instructions-modal');
+    var modalText = document.getElementById('instructions-modal-text');
+    var buttons = document.querySelectorAll('.project__instructions');
+
+    if (!modal || !modalText) return;
+
+    function closeModal() {
+      modal.hidden = true;
+      document.body.classList.remove('modal-open');
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        modalText.innerHTML = button.getAttribute('data-instructions') || '';
+        modal.hidden = false;
+        document.body.classList.add('modal-open');
+      });
+    });
+
+    modal.querySelectorAll('[data-close-instructions]').forEach(function (element) {
+      element.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !modal.hidden) closeModal();
+    });
+  })();
+
+  (function () {
+    var copyBtn = document.getElementById('copy-email');
+    var emailText = document.getElementById('email-text');
+    if (copyBtn && emailText) {
+      copyBtn.addEventListener('click', function () {
+        var email = emailText.textContent.trim();
+        var done = function () {
+          var original = copyBtn.textContent;
+          copyBtn.textContent = 'Kopioitu';
+          copyBtn.disabled = true;
+          setTimeout(function () {
+            copyBtn.textContent = original;
+            copyBtn.disabled = false;
+          }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(done).catch(function () {
+            window.prompt('Copy this address:', email);
+          });
+        } else {
+          window.prompt('Copy this address:', email);
+        }
+      });
+    }
+  })();
+
+  var certificateModal = document.getElementById('certificate-modal');
+  var openCertificate = document.getElementById('open-certificate');
+
+  if (certificateModal && openCertificate) {
+    openCertificate.addEventListener('click', function () {
+      certificateModal.hidden = false;
+      document.body.classList.add('modal-open');
+    });
+
+    certificateModal.querySelectorAll('[data-close-certificate]').forEach(function (element) {
+      element.addEventListener('click', function () {
+        certificateModal.hidden = true;
+        document.body.classList.remove('modal-open');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

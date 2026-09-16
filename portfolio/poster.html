@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erik Cerrada Plumed — Portfolio-juliste</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  /*
+    HOW TO USE THIS FILE
+    - Open it in a browser and print (Ctrl/Cmd P) → it's set up for A4.
+    - Swap the QR code: replace the placeholder box in .qr__box with
+      <img src="qr.png" alt="QR-koodi portfolioon"> once you have the real code.
+    - Swap the URL text under the QR box with your actual portfolio address.
+  */
+
+  :root {
+    --paper: #ece3cd;
+    --paper-deep: #e2d6b6;
+    --rule: #c6b78e;
+    --ink: #221d16;
+    --ink-soft: #5c5140;
+    --ink-faint: #8b7f68;
+
+    --tab-work: #8a6a1f;
+    --tab-skills: #274a5c;
+    --red: #8c2f2f;
+    --blue: #274a5c;
+
+    --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+    --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--paper-deep);
+    font-family: var(--font-display);
+    color: var(--ink);
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+  }
+
+  .poster {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    box-shadow: 0 18px 50px -24px rgba(34,29,22,0.55);
+    padding: 16mm 14mm;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        rgba(0,0,0,0.028) 0px,
+        rgba(0,0,0,0.028) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+  }
+
+  /* ---------- header / file tag ---------- */
+
+  .poster__file {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8mm;
+  }
+
+  /* ---------- achievement stamp ---------- */
+
+  .stamp {
+    position: absolute;
+    top: 22mm;
+    right: 14mm;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 6px;
+    padding: 8px 12px;
+    transform: rotate(-7deg);
+    background: rgba(140,47,47,0.06);
+    text-align: center;
+  }
+
+  .stamp small {
+    display: block;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: var(--ink-soft);
+    margin-top: 2px;
+  }
+
+  /* ---------- name block ---------- */
+
+  .poster__name-block {
+    margin-top: 14mm;
+    max-width: 130mm;
+  }
+
+  .poster__name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+  }
+
+  .poster__role {
+    margin: 6px 0 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- pitch ---------- */
+
+  .poster__pitch {
+    margin-top: 16mm;
+    max-width: 140mm;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.3;
+    color: var(--ink);
+  }
+
+  .poster__pitch em {
+    font-style: normal;
+    color: var(--tab-work);
+  }
+
+  /* ---------- highlights ---------- */
+
+  .highlights {
+    margin-top: 14mm;
+    display: grid;
+    gap: 9px;
+    max-width: 110mm;
+  }
+
+  .highlights__row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted var(--rule);
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+  }
+
+  .highlights__row span.mark {
+    color: var(--tab-work);
+    font-weight: 600;
+  }
+
+  /* ---------- spacer pushes footer block down ---------- */
+
+  .poster__spacer { flex: 1; }
+
+  /* ---------- QR + footer row ---------- */
+
+  .footer-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12mm;
+    border-top: 1px solid var(--ink);
+    padding-top: 10mm;
+  }
+
+  .footer-contact {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--ink-soft);
+    display: grid;
+    gap: 6px;
+  }
+
+  .footer-contact strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .qr-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: none;
+  }
+
+  .qr__box {
+    width: 34mm;
+    height: 34mm;
+    background: #fff;
+    border: 1.5px dashed var(--tab-skills);
+    border-radius: 4px;
+    position: relative;
+  }
+
+  /* decorative corner marks, just to signal "QR goes here" */
+  .qr__box::before,
+  .qr__box::after {
+    content: "";
+    position: absolute;
+    width: 7mm;
+    height: 7mm;
+    border: 2.5px solid var(--tab-skills);
+  }
+  .qr__box::before { top: 3mm; left: 3mm; border-right: none; border-bottom: none; }
+  .qr__box::after   { bottom: 3mm; right: 3mm; border-left: none; border-top: none; }
+
+  .qr__label {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    color: var(--ink-faint);
+    text-align: center;
+    max-width: 34mm;
+  }
+
+  .qr__url {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--blue);
+    text-align: center;
+  }
+
+  /* ---------- print ---------- */
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  @media print {
+    html, body {
+      background: #fff;
+      padding: 0;
+    }
+
+    .poster {
+      width: 210mm;
+      height: 297mm;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .poster {
+      width: 100%;
+      height: auto;
+      min-height: 140vw;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="poster">
+
+  <p class="poster__file">Tiedosto · No. 0192 · Portfolio-juliste</p>
+
+  <div class="stamp">
+    Hopeamitalisti
+    <small>Taitajat 2026<br>Web-kehitys</small>
+  </div>
+
+  <div class="poster__name-block">
+    <h1 class="poster__name">Erik&nbsp;Cerrada<br>Plumed</h1>
+    <p class="poster__role">Tieto- ja viestintätekniikan kaksoistutkintolainen</p>
+  </div>
+
+  <p class="poster__pitch">
+    Tutustu <em>interaktiiviseen</em> portfoliooni — CV, jota voi oikeasti käyttää, ei vain lukea.
+  </p>
+
+  <div class="highlights">
+    <div class="highlights__row"><span class="mark">＋</span> Taitajat 2026, Web-kehitys — hopeamitalisti</div>
+    <div class="highlights__row"><span class="mark">＋</span> Viisi julkaistua web-projektia, mukana rooli- ja käyttöoikeuspohjaisia järjestelmiä</div>
+    <div class="highlights__row"><span class="mark">＋</span> JavaScript, Vue.js, PHP, SQL ja tietokantasuunnittelu</div>
+    <div class="highlights__row"><span class="mark">＋</span> Tavoitteena jatko-opinnot robotiikan alalla</div>
+  </div>
+
+  <div class="poster__spacer"></div>
+
+  <div class="footer-row">
+    <div class="footer-contact">
+      <div><strong>Sähköposti</strong> — erik.cerradaplumed@gmail.com</div>
+      <div><strong>GitHub</strong> — github.com/erik124355</div>
+      <div><strong>Portfolio</strong> — https://tvt-linux.tvtedu.fi/~213601/portfolio/</div>
+    </div>
+
+    <div class="qr-block">
+      <div class="qr__box" aria-hidden="true">
+        <!-- Replace this div's contents with:
+             <img src="qr.png" alt="QR-koodi portfolioon" style="width:100%;height:100%;object-fit:contain;">
+        -->
+      </div>
+      <p class="qr__label">Skannaa ja tutustu portfoliooni</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
